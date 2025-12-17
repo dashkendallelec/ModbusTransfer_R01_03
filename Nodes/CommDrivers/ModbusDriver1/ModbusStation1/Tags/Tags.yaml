@@ -1,0 +1,41 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: Read_Reals
+  Type: ModbusTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+  - Name: ArrayUpdateMode
+    Type: BaseDataVariableType
+    DataType: TagArrayUpdateMode
+    Value: 1
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+- Name: Read_Dints
+  Type: ModbusTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+  Children:
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 300
+  - Name: ArrayUpdateMode
+    Type: BaseDataVariableType
+    DataType: TagArrayUpdateMode
+    Value: 1

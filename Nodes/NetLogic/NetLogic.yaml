@@ -1,0 +1,10 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: MB_TransferData
+  Type: NetLogic
+  Children:
+  - Name: TransferRate_seconds
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 5.5
